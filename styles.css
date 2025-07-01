@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: #fff;
+}
+
+#header {
+  /*width: 100%;
+    height: 100vh; */
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  padding: 100px 10%;
+}
+.logo {
+  width: 140px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* spacing between nav items */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 10%;
+  height: 3px;
+  background: #ff0000;
+  position: relative;
+  left: 0;
+  bottom: -1px;
+  transition: 0.5s;
+}
+
+.header-text {
+  margin-top: 20;
+}
+
+.h1 {
+  font-size: 50px;
+  color: #fff;
+  padding: 10px 10px 10px 75px;
+  display: inline-block;
+}
+.redh1 {
+  font-size: 50px;
+  display: inline-block;
+  color: #ff0000;
+  padding: 0;
+}
+.p1 {
+  color: #fff;
+  padding: 10px 150px;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.companyname {
+  padding-left: 150px;
+  font-size: 50px;
+  :hover {
+    background-color: #ff0000;
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.technologies {
+  padding-top: 50px;
+  padding-left: 150px;
+}
+
+.techimgs {
+  display: flex;
+  flex-direction: row;
+}
+.techimgs img {
+  height: 50px;
+  width: 50px;
+}
+
+.techimgs :hover {
+  background-color: #ff0000;
+}
+
+#git {
+  background-color: #fff;
+}
+
+.profilepic img {
+  height: 250px;
+  width: 250px;
+  border-radius: 500px;
+}
+
+.profilepic {
+  padding-top: 25px;
+  padding-left: 150px;
+}
+
+/* --------------------------
+   📱 Responsive Media Queries
+--------------------------- */
+
+/* Small Devices (Phones) */
+@media (max-width: 480px) {
+  .container {
+    padding: 40px 5%;
+    text-align: center;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: black;
+    color: #fff;
+  }
+
+  #header {
+    /*width: 100%;
+      height: 100vh; */
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container {
+    padding: 100px 10%;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    list-style: none;
+    :hover {
+      background-color: #ff0000;
+    }
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  nav ul li a::after {
+    content: "";
+    width: 10%;
+    height: 3px;
+    background: #ff0000;
+    position: relative;
+    left: 0;
+    bottom: -1px;
+    transition: 0.5s;
+  }
+
+  .header-text {
+    margin-top: 20;
+  }
+
+  .companyname {
+    padding-left: 150px;
+    font-size: 50px;
+    :hover {
+      background-color: #ff0000;
+    }
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .technologies {
+    padding-top: 50px;
+    padding-left: 150px;
+  }
+
+  .techimgs {
+    display: flex;
+    flex-direction: row;
+  }
+  .techimgs img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .techimgs :hover {
+    background-color: #ff0000;
+  }
+
+  #git {
+    background-color: #fff;
+  }
+
+  .profilepic img {
+    height: 250px;
+    width: 250px;
+    border-radius: 500px;
+  }
+
+  .profilepic {
+    padding-top: 25px;
+    padding-left: 150px;
+  }
+
+  /* --------------------------
+     📱 Responsive Media Queries
+  --------------------------- */
+
+  /* Small Devices (Phones) */
+  @media (max-width: 480px) {
+    .container {
+      padding: 40px 5%;
+      text-align: center;
+    }
+
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    nav ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 8px 0;
+    }
+
+    nav ul li a {
+      font-size: 16px;
+    }
+
+    .h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      padding: 10px 0;
+    }
+
+    .h1 h1 {
+      font-size: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .redh1 {
+      color: #ff0000;
+    }
+    .companyname {
+      font-size: 30px;
+      padding-left: 0;
+      display: block;
+    }
+
+    .p1 {
+      font-size: 18px;
+      padding: 10px 15px;
+      text-align: center;
+    }
+
+    .profilepic {
+      padding-left: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .profilepic img {
+      height: 180px;
+      width: 180px;
+    }
+
+    .technologies {
+      padding-left: 0;
+      padding-top: 30px;
+      text-align: center;
+      font-size: small;
+    }
+
+    .techimgs {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .techimgs img {
+      height: 40px;
+      width: 40px;
+      padding-bottom: 100px;
+    }
+
+    .container * {
+      text-align: center;
+    }
+  }
+
+  /* Medium Devices (Tablets) */
+  @media (max-width: 768px) {
+    .container {
+      padding: 60px 8%;
+    }
+
+    .h1,
+    .redh1,
+    .companyname {
+      font-size: 40px;
+      padding-left: 40px;
+    }
+
+    .p1 {
+      font-size: 22px;
+      padding: 10px 40px;
+    }
+
+    .technologies,
+    .profilepic {
+      padding-left: 40px;
+    }
+
+    .profilepic img {
+      height: 200px;
+      width: 200px;
+    }
+  }
+
+  /* Large Devices (Desktops) */
+  @media (min-width: 1200px) {
+    .container {
+      padding: 120px 15%;
+    }
+
+    .h1,
+    .redh1,
+    .companyname {
+      font-size: 60px;
+    }
+
+    .p1 {
+      font-size: 32px;
+    }
+
+    .profilepic img {
+      height: 300px;
+      width: 300px;
+    }
+  }
+
+  .h1,
+  .redh1,
+  .companyname {
+    font-size: 30px;
+    padding-left: 0;
+    display: block;
+  }
+
+  .p1 {
+    font-size: 18px;
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .profilepic {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .profilepic img {
+    height: 180px;
+    width: 180px;
+  }
+
+  .technologies {
+    padding-left: 0;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .techimgs {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .techimgs img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .container * {
+    text-align: center;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 768px) {
+  .container {
+    padding: 60px 8%;
+  }
+
+  .h1,
+  .redh1,
+  .companyname {
+    font-size: 40px;
+    padding-left: 40px;
+  }
+
+  .p1 {
+    font-size: 22px;
+    padding: 10px 40px;
+  }
+
+  .technologies,
+  .profilepic {
+    padding-left: 40px;
+  }
+
+  .profilepic img {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1200px) {
+  .container {
+    padding: 120px 15%;
+  }
+
+  .h1,
+  .redh1,
+  .companyname {
+    font-size: 60px;
+  }
+
+  .p1 {
+    font-size: 32px;
+  }
+
+  .profilepic img {
+    height: 300px;
+    width: 300px;
+  }
+}

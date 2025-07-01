@@ -1,0 +1,180 @@
+html {
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.heading {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 50px;
+}
+#header {
+  /*width: 100%;
+    height: 100vh; */
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  padding: 100px 10%;
+}
+
+.logo {
+  width: 140px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* spacing between nav items */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+nav ul li a::after {
+  content: "";
+  width: 10%;
+  height: 3px;
+  background: #ff0000;
+  position: relative;
+  left: 0;
+  bottom: -1px;
+  transition: 0.5s;
+}
+
+a {
+  color: white;
+}
+.p {
+  font-size: 25px;
+  text-align: center;
+  p:h6 {
+    font-size: 25;
+  }
+}
+.p a:hover {
+  color: #ff0000;
+}
+
+.cv {
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+  background-color: #ff0000;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  color: white;
+  inline-size: none;
+}
+
+/* -----------------------------
+   📱 Responsive Media Queries
+------------------------------ */
+
+/* Small Devices (Phones) */
+@media (max-width: 480px) {
+  .container {
+    padding: 40px 5%;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 0;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .heading {
+    font-size: 28px;
+    text-align: center;
+    padding: 8px;
+  }
+
+  .p {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+    padding: 0 15px;
+  }
+
+  .cv {
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+    border-radius: 6px;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 36px;
+  }
+
+  .container {
+    padding: 60px 8%;
+  }
+
+  .p {
+    font-size: 20px;
+  }
+
+  .cv {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1200px) {
+  .container {
+    padding: 120px 15%;
+  }
+
+  .heading {
+    font-size: 60px;
+  }
+}
